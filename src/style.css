@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+#container {
+    padding: 3rem;
+    max-width: 860px;
+    width: 45vw;
+    height: 100vh;
+
+    color: #333333;
+    
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+#img-lipe {
+    width: 20rem;
+    height: 20rem;
+
+    max-width: 200px;
+    max-height: 200px;
+
+    border-radius: 50%;
+}
+
+h1 {
+    font-size: 3.5rem;
+
+    margin: 1rem 0;
+}
+
+h2 {
+    font-weight: 300;
+}
+
+h2 a:hover {
+    transition-duration: 0.4s;
+    color: #107FD2;
+}
+
+#buttons-container {
+    margin: 3rem;
+
+    width: 40vw;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+
+#buttons-container #first-side, #buttons-container #second-side {
+    height: 18rem;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+
+a {
+    transition-duration: 0.4s;
+    text-decoration: none;
+    color: #333333;
+}
+
+.button {
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width: 19vw;
+    height: 8rem;
+
+    padding: 0.5rem;
+
+    border: 0.5px solid #d6d6d6;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.button strong {
+    margin: 1rem 0 0 0;
+    padding-left: 1.2rem;
+    height: 2rem;
+
+    font-size: 1.8rem;
+}
+
+.button p {
+    margin: 0 0 1.2rem 0;
+    padding-left: 1.2rem;
+    height: 2rem;
+
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.button:hover {
+    transition-duration: 0.4s;
+    border: #107FD2 0.5px solid;
+    color: #107FD2;
+}
+
+#author {
+    padding-bottom: 3rem;
+}
+
+@media (max-width: 1000px) {
+    #container {
+        width: 100vw;
+    }
+
+    #img-lipe {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    #buttons-container {
+        width: 80vw;
+        flex-direction: column;
+    }
+
+    #buttons-container #first-side, #buttons-container #second-side {
+        flex-direction: column;
+        width: 80vw;
+        align-items: center;
+
+        margin-top: 2rem;
+    }
+
+    #second-side {
+        margin-top: 2rem;
+    }
+
+    .button {
+        width: 80vw;
+    }
+
+    #author {
+        font-size: 1.3rem;
+    }
+
+    #author a {
+        color: #107FD2;
+    }
+}
